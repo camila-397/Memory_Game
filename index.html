@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/4380b6d3aa.js" crossorigin="anonymous"></script>
+
+    <link rel="icon" href="./memoria.png">
+    <title>Juego de Memoria</title>
+    <link rel="stylesheet" href="./estilos.css">
+</head>
+
+<body>
+
+    <div class="inicio"  id="inicio">
+        <button id="btn_iniciar">Iniciar el juego</button>
+    </div>
+
+    <div class="juego" id="juego">
+
+        <div id="tablero"></div><br>
+        <div id="info_partida"></div>
+        <br>
+        <button class="nuevo_juego" onclick="nuevaPartida()">Jugar de Nuevo</button>
+        
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+              <p>¡Felicidades! Has encontrado todas las parejas.</p>
+              <button class="nueva_partida" onclick="reiniciarPartida()">Nueva Partida</button>
+              <button onclick="cerrarModal()">Cerrar</button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+    <script src="./app.js"></script>
+</body>
+</html>
